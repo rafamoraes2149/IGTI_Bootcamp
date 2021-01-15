@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Desafio - Módulo 1</title>
+  </head>
+  <body>
+    <h1>Busca de usuários</h1>
+    <div class="search-container">
+      <input
+        class="search-input"
+        type="text"
+        id="searchInput"
+        placeholder="Buscar"
+        autofocus
+        value=""
+      />
+      <input
+        class="search-button"
+        type="button"
+        id="searchButton"
+        value="Buscar"
+        disabled
+      />
+    </div>
+    <div class="results-container">
+      <div class="user-list">
+        <h5 id="resultsTitle">Nenhum usuário filtrado</h5>
+        <div id="tabUserResults"></div>
+      </div>
+      <div class="statistic-list">
+        <h5 id="statsTitle">Nada a ser exibido</h5>
+        <div id="tabStats"></div>
+      </div>
+    </div>
+
+    <script src="./js/users.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
