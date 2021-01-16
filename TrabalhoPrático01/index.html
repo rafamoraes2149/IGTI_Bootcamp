@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizador RGB</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-column">
+        <ul>
+          <li class="flex-row">
+            <span class="label">Vermelho - R</span>
+            <input
+              class="range"
+              type="range"
+              min="0"
+              max="255"
+              value="0"
+              id="rangeRed"
+            />
+            <input
+              type="number"
+              disabled
+              value="0"
+              min="0"
+              max="255"
+              id="displayRed"
+            />
+          </li>
+          <li class="flex-row">
+            <span class="label">Verde - G</span>
+            <input
+              class="range"
+              type="range"
+              min="0"
+              max="255"
+              value="0"
+              id="rangeGreen"
+            />
+            <input
+              type="number"
+              disabled
+              value="0"
+              min="0"
+              max="255"
+              id="displayGreen"
+            />
+          </li>
+          <li class="flex-row">
+            <span class="label">Azul - B</span>
+            <input
+              class="range"
+              type="range"
+              min="0"
+              max="255"
+              value="0"
+              id="rangeBlue"
+            />
+            <input
+              type="number"
+              disabled
+              value="0"
+              min="0"
+              max="255"
+              id="displayBlue"
+            />
+          </li>
+        </ul>
+        <div class="square" id="square"></div>
+      </div>
+    </div>
+    <script src="./js/script_TP1.js"></script>
+  </body>
+</html>
